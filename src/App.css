@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Titillium+Web&display=swap');
+
+
+* {
+	font-family: 'Lato', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background: url(./img/composition-9.png);
+	background-size: cover;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app > div {
+	width: 600px;
+	height: 600px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Welcome Page */
+
+#welcome {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f0f0f0;
+	 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-.App-link {
-  color: #61dafb;
+#todoDiv {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#todoDivForm {
+	width: 100%;
+	height: 50px;
+	padding: 0px;
+	box-shadow: inset 0 10px 15px -10px #000;
+
 }
+
+#toDoInput {
+	font-size: 1em;
+	width: 100%;
+	height: 50px;
+	padding-left: 15px;
+	box-sizing: border-box;
+	border: 0px;
+	background-color: white;
+	outline: none;
+}
+
+ul {
+	width: 100%;
+	height: 500px;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+
+ul::-webkit-scrollbar {
+    display: none;
+}
+
+li {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	padding-left: 15px;
+	box-sizing: border-box;
+	border-bottom: 0px solid black;
+	transition: 0.15s ease;
+	background-color: white;
+}
+
+li:hover {
+	background-color: #F0f0f0;
+}
+
+span {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	width: 30px;
+	color: #ffd9d9;
+	transition: 0.25s ease;
+	background-color: white;
+}
+
+/* color: #ffd9d9; */
+/*background-color: #0f0f0f;*/
+
+span:hover {
+	width: 50px;
+}
+
+
+span:hover {
+	color: red;
+}
+
+#footer {
+	background-color: #393E41;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 50px;
+	box-sizing: border-box;
+	color: white;
+}
+#footer > input {
+	height: 20px;
+	width: 60px;
+}
+
+
+
+
+
+

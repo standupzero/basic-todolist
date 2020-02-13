@@ -1,13 +1,15 @@
-import React from 'react';
-import What from './components/What.js';
+import React, { Component } from 'react';
+import ToDo from './components/ToDoApp.js'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-    <What/>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+		<div className="app">
+			<ToDo/>
+		</div>
+      );
+  };
 }
 
 export default App;
